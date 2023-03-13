@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@r-wasm/webr': ^0.1.0
   '@types/node': 18.15.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -10,6 +11,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
+  '@r-wasm/webr': 0.1.0
   '@types/node': 18.15.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -141,10 +143,27 @@ packages:
     dev: false
     optional: true
 
+  /@r-wasm/webr/0.1.0:
+    resolution: {integrity: sha512-3KTciIpxAtPWD5BZzpKEpECCjQ4YYTZ6nkw2aVjy7/cDk0WbNhM2UTnKtw6tXS+QsKLWjgx0jhDj5nvinKNcPA==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@types/emscripten': 1.39.6
+      jquery: 3.6.4
+      jstree: 3.3.15
+      xmlhttprequest-ssl: 2.1.0
+      xterm: 5.1.0
+      xterm-addon-fit: 0.7.0_xterm@5.1.0
+      xterm-readline: 1.1.1_xterm@5.1.0
+    dev: false
+
   /@swc/helpers/0.4.14:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.5.0
+    dev: false
+
+  /@types/emscripten/1.39.6:
+    resolution: {integrity: sha512-H90aoynNhhkQP6DRweEjJp5vfUVdIj7tdPLsu7pq89vODD/lcugKfZOsfgwpvM6XUewEp2N5dCg1Uf3Qe55Dcg==}
     dev: false
 
   /@types/node/18.15.0:
@@ -173,6 +192,11 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: false
 
+  /ansi-regex/5.0.1:
+    resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
+    engines: {node: '>=8'}
+    dev: false
+
   /caniuse-lite/1.0.30001464:
     resolution: {integrity: sha512-oww27MtUmusatpRpCGSOneQk2/l5czXANDSFvsc7VuOQ86s3ANhZetpwXNf1zY/zdfP63Xvjz325DAdAoES13g==}
     dev: false
@@ -185,8 +209,27 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
+  /emoji-regex/8.0.0:
+    resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+    dev: false
+
+  /is-fullwidth-code-point/3.0.0:
+    resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /jquery/3.6.4:
+    resolution: {integrity: sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==}
+    dev: false
+
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /jstree/3.3.15:
+    resolution: {integrity: sha512-fNK2EBgGjaJQ3cJuINX/80vDeAufYWtM0csudgYl3eJG+eRAH/1r1IJVUOvAlJIa+uSgg+Fi8uGrt+Xbs92eKg==}
+    dependencies:
+      jquery: 3.6.4
     dev: false
 
   /loose-envify/1.4.0:
@@ -290,6 +333,22 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /string-width/4.2.3:
+    resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
+    engines: {node: '>=8'}
+    dependencies:
+      emoji-regex: 8.0.0
+      is-fullwidth-code-point: 3.0.0
+      strip-ansi: 6.0.1
+    dev: false
+
+  /strip-ansi/6.0.1:
+    resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
+    engines: {node: '>=8'}
+    dependencies:
+      ansi-regex: 5.0.1
+    dev: false
+
   /styled-jsx/5.1.1_react@18.2.0:
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
@@ -315,4 +374,30 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: false
+
+  /xmlhttprequest-ssl/2.1.0:
+    resolution: {integrity: sha512-PlkG6ZrKEtYVRDboRw5uUzy3nc6vMrZyT94Z3MzLc0PvFzy6d6VD8OLKKcsk9GdQDxz0XQjIwNHvpIMC/1v0pA==}
+    engines: {node: '>=0.4.0'}
+    dev: false
+
+  /xterm-addon-fit/0.7.0_xterm@5.1.0:
+    resolution: {integrity: sha512-tQgHGoHqRTgeROPnvmtEJywLKoC/V9eNs4bLLz7iyJr1aW/QFzRwfd3MGiJ6odJd9xEfxcW36/xRU47JkD5NKQ==}
+    peerDependencies:
+      xterm: ^5.0.0
+    dependencies:
+      xterm: 5.1.0
+    dev: false
+
+  /xterm-readline/1.1.1_xterm@5.1.0:
+    resolution: {integrity: sha512-f87S2/jKwRZoZTxE2vkPgBCipDl6k6tTkMTb9pmwC4R6XkfR491fWBuToZd/nZasp6seD2u0jdABinUDWsK6dw==}
+    peerDependencies:
+      xterm: ^5.0.0
+    dependencies:
+      string-width: 4.2.3
+      xterm: 5.1.0
+    dev: false
+
+  /xterm/5.1.0:
+    resolution: {integrity: sha512-LovENH4WDzpwynj+OTkLyZgJPeDom9Gra4DMlGAgz6pZhIDCQ+YuO7yfwanY+gVbn/mmZIStNOnVRU/ikQuAEQ==}
     dev: false
